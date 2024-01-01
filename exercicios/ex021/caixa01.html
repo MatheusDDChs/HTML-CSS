@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        /*  REVISÃO
+
+Propriedades de borda:
+
+   largura	->	border-width: 10px;
+
+   estilo	->	border-style: solid;	 (sólida)
+					     : dashed;	 (tracejada)
+					     : dotted;	 (pontilhada)
+					     : double;	 (dupla)
+					     : groove;	 (em 3d)
+
+   cor 	->	border-color: red;
+
+  - Shorthand: 
+
+	border: 10px solid red (largura, estilo, cor)
+
+
+Propriedades de padding:
+
+	padding-top: 10px;	   (de topo)
+	padding-right: 10px;	   (à direita)
+	padding-bottom: 10px    (de baixo)
+	padding-left: 10px;	   (à esquerda)
+
+  - Shorthand: 
+	
+	padding: 15px 10px 15px 10px;    (sent. horário: top, right, bottom, left)
+	padding: 10px; 		(os 4 lados iguais a 10px)
+	padding: 15px 10px;	 (cima e baixo 15px / esquerda e direita 10px)
+
+		   
+Acessar DevTools do Chrome: botão direito no corpo do site -> inspecionar 
+*/
+
+        h1 {
+        
+            background-color: lightpink;
+            height: 300px;
+            width: 300px;
+            border: 10px solid black;
+            border-radius: 3px;
+
+            padding: 10px 20px;
+
+            margin: 30px auto 30px auto;
+
+            outline: 5px dashed salmon;
+        }
+
+        a {
+           display: block;
+           border: 7px solid red;
+           padding: 4px;
+           height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Level</h1>
+    <p>Parágrafos também são exemplos de Box-Level, mas os <a href="#">Links são exemplos de inline-Level</a>. Vamos ver como isso funciona.</p>
+</body>
+</html>

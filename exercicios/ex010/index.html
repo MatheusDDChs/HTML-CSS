@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="background-image: linear-gradient(to right, black, white),">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalhando com links</title>
+</head>
+<style>
+    article {
+        margin-bottom: 2em;
+    }
+
+    section {
+        margin-bottom: 2em;
+    }
+</style>
+<body>
+    <article>
+        <h1>Usando links externos</h1>
+        <p>Você pode usar meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">repositório público no GitHub</a></p>
+        <p>Você também pode acessar o meu <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=28" target="_blank" rel="external">Canal gratuito no Youtube</a></p>
+    </article>
+
+    <section>
+        <h1>Usando links internos</h1>
+            <p>esta é a primeira página do meu site. Se você quiser,pode acessar também a minha <a href="pag002.html" target="_self" rel="next">Segunda página</a></p>
+            <p>Você também pode acompanhar nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a> </p>
+    </section>
+
+    <footer>
+        <h1>Links para download</h1>
+             <nav>
+                <li><a href="livro/meulivro.pdf" title="pdf do guanabara" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+                <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+            </nav>
+    </footer>
+</body>
+</html>

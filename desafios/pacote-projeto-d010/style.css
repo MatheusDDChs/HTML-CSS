@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+@font-face {
+
+    src: url(fontes/idroid.otf) format(opentype);
+    font-family: 'idroid';
+    font-weight: normal;
+}
+
+@font-face {
+
+    src: url(fontes/BebasNeue-Regular.ttf) format(opentype);
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+}
+
+:root { /* Com essas váriaveis fica mais fácil de atualizar o código futuramente caso o cliente queira mudar as cores ou fontes etc */
+    --cor0: #ebe5c5;
+    --cor1: #83e1ab;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'idroid', Times; 
+}
+
+html {
+    background-color: var(--cor1);
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    margin: 0;
+}
+
+a.externo:after {
+    content: '\00A0\1F517';
+}
+
+/* CABEÇALHO E NAVEGAÇÃO */
+
+header {
+    margin: 0;  /* Ao decorrer do código vou separando as declarações por caixa, cores e texto. 
+    Talvez não nesta ordem mas sim com esta distinção para não misturar muito */
+
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    color: white;
+
+    text-align: center;
+    padding-top: 25px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.295);
+}
+
+header h1 {
+    margin: 0;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 3em;
+
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.356);
+}
+
+header p {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.363);
+
+    padding: 5px;
+
+}
+
+nav a {
+    display: inline-block; 
+    padding: 10px;
+    margin: 5px;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    color: var(--cor2); 
+    transition: background-color 0.3s ease;
+
+}   
+
+nav a:hover {
+    background-color: #269A5A;
+}
+
+/* MAIN E SEUS TITULOS */
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+
+
+    margin: 0 auto; /* Centraliza o bloco na tela */
+    border-radius: 0px 0px 10px 10px;
+
+    background-color: #c5ebd6;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.445);
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+
+    color: var(--cor4);
+
+    margin: 0;
+}
+
+.subtitulo {
+    padding: 5px;
+
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+
+    text-indent: 10px;
+    font-size: 1.3em;
+
+}
+
+main p {
+    margin: 15px 0px;
+
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    background-color: var(--cor2);
+    color: var(--cor5);
+
+    text-decoration: none;
+    padding: 2px 5px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    background-color: var(--cor3);
+}
+
+
+/*IMAGENS DAN-DROIDS, IRINA BLOCK, BUGDROID*/
+
+.dandroids-img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.irina-img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+main img.bug-droid {
+    width: fit-content;
+    margin: 0px auto;
+    display: block;
+}
+
+
+section {
+    padding: 20px;
+}
+
+
+
+/* LIKNS DEPOIS DA PRIMEIRA VERSÃO*/
+
+div.video {
+    padding: 15px 25px 15px 25px;
+    margin-bottom: 30px;
+    margin: 0px 0px;
+
+    background-color: var(--cor4);
+    position: relative;
+    padding-bottom: 56.5%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+aside {
+    max-width: 738px;
+    min-width: 300;
+    margin: 0px auto 0px auto;
+
+    border-radius: 10px;
+
+    background-color: var(--cor1);
+}
+
+aside h3 {
+    background-color: var(--cor3);
+    color: white;
+
+    border-radius: 10px 10px 0px 0px;
+
+    margin-top: 10px;
+    padding: 10px;
+}
+
+aside p {
+    margin: 0;
+    padding: 10px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0'; /*Aqui podemos mudar o ponto da lista*/
+
+    list-style-position: inside; /*Aqui podemos mudar a posição dos pontos no bloco*/
+
+    columns: 2; /*Aqui podemos ajustar o número de colunas da lista*/
+}
+
+abbr {
+    text-decoration: none;
+}
+
+/* Aqui começa as configurações do Rodapé */
+
+footer {
+    margin: 0;
+    padding: 5px;
+    margin-top: 25px;
+
+    background-color: var(--cor5);
+    color: white;
+
+    text-align: center;
+    font-size: 0.9em;
+}
+footer p {
+    margin: 0;
+    padding: 0px;
+}
+
+footer > p > a{
+    color: white;
+
+    font-weight: bold;  
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    color: #3ddc84;
+}
