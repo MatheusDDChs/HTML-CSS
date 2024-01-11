@@ -1,5 +1,5 @@
 # HTML-CSS
- Curso de HTML5 e CSS3 do Curso em video
+ Curso de HTML5 e CSS3 do Curso em video - Learninng with Gustavo Guanabara
 
  Estou aprendendo a criar sites e agora vou gerenciar meus repositórios
 
