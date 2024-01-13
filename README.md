@@ -6,7 +6,7 @@
 This one Works in your phone! take a try here:
 <a href="https://matheusddchs.github.io/HTML-CSS/desafios/pacote-projeto-d010/index"> run challenge 10</a> 
 
-Others projects inspired by Gustavo Guanabara:
+Others projects inspired by Gustavo Guanabara: <br>
 <a href="https://matheusddchs.github.io/HTML-CSS/desafios/desafio-09/index"> run challenge 09</a>
-<br>
+
 <a href="https://matheusddchs.github.io/HTML-CSS/exercicios/ex010/index"> run ex010</a>
