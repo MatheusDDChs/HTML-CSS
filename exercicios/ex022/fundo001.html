@@ -11,6 +11,10 @@
         background-image: url(imagens/wallpaper001.jpg);
     }
 
+    section {
+        text-align: center;
+    }
+
     div.quadrado {
         display: inline-block;
         border: 2px solid black;
@@ -19,6 +23,7 @@
         border-radius: 5px;
         background-color: grey;
         margin-right: 15px;
+        margin-bottom: 15px;
     }
         /* Aqui temos diversas maneiras colocar um papel de parede */
     div#q1 {
@@ -33,11 +38,65 @@
         background-image: url(imagens/pattern003.png);
     }
 
+    div#q4 {
+        background-image: url(imagens/pattern001.png);
+    }
+
+    div#q5 {
+        background-image: url(imagens/pattern004.png);
+        background-repeat: repeat-x;
+        background-color: #D59E65;
+    }
+ 
+
+    div#q6 {
+        background-image: url(imagens/wallpaper002.jpg);
+        background-size: 300px 300px;
+        background-repeat: no-repeat;
+    }
+
+    div#q7 {
+        background-image: url(imagens/wallpaper003.jpg);
+        background-size: 300px 300px;
+        background-repeat: no-repeat;
+    }
+
+    div#q8 {
+        background-image: url(imagens/target001.png);
+        background-size: 150px 150px;
+        background-repeat: repeat;
+    }
+    
+    div#q9 {
+        background-image: url(imagens/pattern002.png);
+        background-size: 300px 300px;
+    }
+
+    div#q10 {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStyp7DwfNRb0hUBKzwwGE-HNsw8s-mcG6QFA&usqp=CAU);
+        background-size: 300px 300px;
+        background-repeat: no-repeat;
+    }
     </style>
 </head>
 <body>
-    <div class="quadrado" id="q1"></div>
-    <div class="quadrado" id="q2"></div>
-    <div class="quadrado" id="q3"></div>
+
+    <!-- Podemos fazer a seguinte fórmula MARCAÇÃO.CLASSE#ID SE QUISER ADICIONAR EM SEGUIDA DO ID$ E POR ULTIMO *x.
+    No fim a fórmula pode ficar assim: article.texto#t$*10 (o $ adiciona números cresentes) -->
+
+    <section>
+        <div class="quadrado" id="q1"></div>
+        <div class="quadrado" id="q2"></div>
+        <div class="quadrado" id="q3"></div>
+        <div class="quadrado" id="q2"></div>
+        <div class="quadrado" id="q3"></div>
+        <div class="quadrado" id="q4"></div>
+        <div class="quadrado" id="q5"></div>
+        <div class="quadrado" id="q6"></div>
+        <div class="quadrado" id="q7"></div>
+        <div class="quadrado" id="q8"></div>
+        <div class="quadrado" id="q9"></div>
+        <div class="quadrado" id="q10"></div>
+    </section>
 </body>
 </html>
