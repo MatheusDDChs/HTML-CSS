@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+
+body {
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    align-items: center;
+
+    padding: 0px;
+    
+    background-color: black;
+}
+
+header h1 {
+    margin: 0px;
+    font-family: 'Passion One', sans-serif;
+    font-size: 10vw;
+    font-variant: small-caps;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+header a:hover{
+    text-decoration: underline;
+}
+
+header p {
+    font-size: 1.3em;
+    padding-bottom: 50px;
+}
