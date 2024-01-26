@@ -45,3 +45,25 @@ header p {
     font-size: 1.3em;
     padding-bottom: 50px;
 }
+
+main section.fundo-branco {
+    font-family: var(--fonte3);
+    font-size: 3em;
+    margin-left: 30px;
+}
+
+main section#fundo-joaninha {
+    font-family: var(--fonte3);
+    font-size: 3em;
+    margin-left: 30px;
+    background-color: rgba(0, 0, 0, 0.253);
+    padding: 10px;
+    background-image: url(imagens/background001.jpg);
+    background-position: center left;
+}
+
+main section#fundo-joaninha > p{
+    background-color: rgba(0, 0, 0, 0.315);
+    display: inline;
+    color: white;
+}
