@@ -46,24 +46,34 @@ header p {
     padding-bottom: 50px;
 }
 
-main section.fundo-branco {
+main section.normal{
     font-family: var(--fonte3);
     font-size: 3em;
     margin-left: 30px;
 }
 
-main section#fundo-joaninha {
+main section.imagem {
     font-family: var(--fonte3);
     font-size: 3em;
     margin-left: 30px;
-    background-color: rgba(0, 0, 0, 0.253);
+
     padding: 10px;
-    background-image: url(imagens/background001.jpg);
-    background-position: center left;
+    color: white;
+    background-size: cover;
+    position: static;
+    margin: 0px;
+    background-attachment: fixed;
 }
 
 main section#fundo-joaninha > p{
     background-color: rgba(0, 0, 0, 0.315);
-    display: inline;
+    display: inline-block;
     color: white;
+    padding: 15px;
+    position: relative;
+}
+
+main section.imagem#img-01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
 }
