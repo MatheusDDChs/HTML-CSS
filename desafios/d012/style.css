@@ -15,25 +15,26 @@ body {
 
 header {
     text-align: center;
-    color: white;
-    align-items: center;
 
+    align-items: center;
     padding: 0px;
-    
+
+    color: white;
     background-color: black;
 }
 
 header h1 {
     margin: 0px;
+    
     font-family: 'Passion One', sans-serif;
     font-size: 10vw;
     font-variant: small-caps;
 }
 
-header a {
+a {
     text-decoration: none;
-    color: white;
     font-weight: bold;
+    color: white;
 }
 
 
@@ -46,34 +47,57 @@ header p {
     padding-bottom: 50px;
 }
 
-main section.normal{
+main section{
     font-family: var(--fonte3);
     font-size: 3em;
     margin-left: 30px;
+    margin-bottom: 10vh;
+    padding: 10px;
+    line-height: 2em;
+
 }
 
 main section.imagem {
-    font-family: var(--fonte3);
-    font-size: 3em;
-    margin-left: 30px;
-
-    padding: 10px;
-    color: white;
-    background-size: cover;
-    position: static;
     margin: 0px;
-    background-attachment: fixed;
+    height: 100vh;
+
+    background: black right center/cover no-repeat fixed;
+    position: static;
+    
+    color: white;
+    box-shadow: inset 0px 7px 5px rgba(0, 0, 0, 0.37);
 }
 
-main section#fundo-joaninha > p{
-    background-color: rgba(0, 0, 0, 0.315);
+main section.imagem p{
     display: inline-block;
-    color: white;
-    padding: 15px;
+    padding: 15px 15px 15px 15px;
+    margin: 40px 0px 40px 30px;
+
     position: relative;
+
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
 }
 
 main section.imagem#img-01{
     background-image: url(imagens/background001.jpg);
     background-position: right center;
+}
+
+main section.imagem#img-02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
+
+footer {
+    text-align: center;
+    font-size: 2.5vh;
+
+    padding: 5px;
+
+    color: white;
+    background-color: black;
+}
+footer p {
+    margin: 0px;
 }
