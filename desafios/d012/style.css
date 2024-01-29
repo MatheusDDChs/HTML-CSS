@@ -101,3 +101,7 @@ footer {
 footer p {
     margin: 0px;
 }
+
+footer a:hover {
+    text-decoration: underline;
+}
