@@ -1,17 +1,23 @@
 @charset "UTF-8";
 
-
-
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
 
-
 body {
     margin: 0px;
 }
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* CABEÇALHO */
 
 header {
     text-align: center;
@@ -31,12 +37,6 @@ header h1 {
     font-variant: small-caps;
 }
 
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-}
-
 
 header a:hover{
     text-decoration: underline;
@@ -47,14 +47,20 @@ header p {
     padding-bottom: 50px;
 }
 
-main section{
-    font-family: var(--fonte3);
-    font-size: 3em;
-    margin-left: 30px;
-    margin-bottom: 10vh;
-    padding: 10px;
-    line-height: 2em;
 
+/* CONTEUDO PRINCIPAL */
+
+main section{
+    font-size: 3em;
+    margin: 0px 0px 10vh 30px;
+    line-height: 2em;
+}
+
+main section pre{
+    line-height: 2em;
+    font-family: var(--fonte3);
+
+    white-space: pre-line;
 }
 
 main section.imagem {
@@ -68,7 +74,7 @@ main section.imagem {
     box-shadow: inset 0px 7px 5px rgba(0, 0, 0, 0.37);
 }
 
-main section.imagem p{
+main section.imagem pre{
     display: inline-block;
     padding: 15px 15px 15px 15px;
     margin: 40px 0px 40px 30px;
@@ -88,6 +94,9 @@ main section.imagem#img-02{
     background-image: url(imagens/background002.jpg);
     background-position: right center;
 }
+
+
+/* RODAPÉ */
 
 footer {
     text-align: center;
