@@ -38,13 +38,14 @@ header h1 {
 }
 
 
-header a:hover{
+header a:hover {
     text-decoration: underline;
 }
 
 header p {
     font-size: 1.3em;
     padding-bottom: 50px;
+    font-family: var(--fonte1);
 }
 
 
@@ -107,8 +108,10 @@ footer {
     color: white;
     background-color: black;
 }
+
 footer p {
     margin: 0px;
+    font-family: var(--fonte1);
 }
 
 footer a:hover {
