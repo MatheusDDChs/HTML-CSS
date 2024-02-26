@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Desafio 13 pt.02</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: slategrey;
+            background-color: gainsboro;
         }
 
         table {
             border-collapse: collapse;
-            width: 300px;
-            margin: auto;
             background-color: white;
         }
 
         td {
-            border: 1px solid black;
+            border: 2px solid black;
+            width: 80px;
             text-align: center;
-            height: 20px;
-            padding: 10px;
         }
     </style>
 </head>
 <body>
     <table>
         <tr>
-            <td>A</td>
-            <td>B</td>
-
-            <td rowspan="2" colspan="2">D</td>
+            <td colspan="4">A</td>  <td rowspan="4">B</td>
         </tr>
-        <tr>
-            <td colspan="2">F</td>
-        </tr>
-        <tr>
-            <td>J</td>
-            <td>K</td>
-            <td>L</td>
 
+        <tr>
+            <td rowspan="4">C</td>  <td>D</td>  <td>E</td>  <td>F</td>
+        </tr>
+
+        <tr>
+            <td>G</td>  <td>H</td>  <td>I</td>
+        </tr>
+
+        <tr>
+            <td>J</td>  <td>L</td>  <td>M</td>
+        </tr>
+        
+        <tr>
+            <td colspan="4">N</td>
         </tr>
     </table>
 </body>
