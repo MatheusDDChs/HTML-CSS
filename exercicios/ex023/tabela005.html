@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gainsboro;
+            text-align: center;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            width: 500px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col.vermelho {
+            background-color: red;
+        }
+
+        col.amarelo {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+
+        <colgroup>
+            <col class="amarelo" span="2">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+            <col class="vermelho">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Matheus Diedrichs</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Físico Nuclear</td>
+        </tr>
+
+        <tr>
+            <td>Emily Diedrichs</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Advogada</td>
+        </tr>
+
+        <tr>
+            <td>Nilsa Diedrichs</td>
+            <td>F</td>
+            <td>50</td>
+            <td>Melhor mãe do mundo</td>
+        </tr>
+
+        <tr>
+            <td>Joelson Diedrichs</td>
+            <td>M</td>
+            <td>56</td>
+            <td>Melhor pai do mundo</td>
+        </tr>
+
+        <tr>
+            <td>João Lucas</td>
+            <td>M</td>
+            <td>17</td>
+            <td>Estudante</td>
+        </tr>
+
+        <tr></tr>
+    </table>
+
+</body>
+</html>
