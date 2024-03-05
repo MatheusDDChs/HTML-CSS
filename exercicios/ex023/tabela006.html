@@ -12,12 +12,28 @@
         }
         
         table {
-            width: 500px;
+            max-width: 750px;
             border-collapse: collapse;
+            background-color: white;
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
         }
 
         td, th {
             border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: wheat;
+        }
+
+        div#container {
+            overflow-x: auto;
         }
     </style>
 </head>
@@ -25,23 +41,130 @@
     <h1>Tabelas em telas pequenas</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorem aliquam asperiores veritatis necessitatibus et maiores iure accusamus exercitationem nostrum dicta officia praesentium pariatur tempore ut animi, delectus voluptas accusantium.</p>
 
-    <table>
-        <caption>Tabelas Responsívas</caption>
-        <tr>
-            <th>Produtos</th>
-            <th>Jan</th>
-            <th>Fev</th>
-            <th>Mar</th>
-            <th>Abr</th>
-            <th>Mai</th>
-            <th>Jun</th>
-            <th>Jul</th>
-            <th>Ago</th>
-            <th>Set</th>
-            <th>Out</th>
-            <th>Nov</th>
-            <th>Dez</th>
-        </tr>
-    </table>
+    <div id="container">
+        <table>
+            <caption>Tabelas Responsívas</caption>
+            <tr>
+                <th>Produtos</th>
+                <th>Jan</th>
+                <th>Fev</th>
+                <th>Mar</th>
+                <th>Abr</th>
+                <th>Mai</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Ago</th>
+                <th>Set</th>
+                <th>Out</th>
+                <th>Nov</th>
+                <th>Dez</th>
+            </tr>
+            <tr>
+                <th>Amazon Echo</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <th>Playstation5</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <th>Home Theater</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <th>Lava louças</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <th>Samsung Galaxy S23</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <th>Ipad Mini</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <th>Tv 40"</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
