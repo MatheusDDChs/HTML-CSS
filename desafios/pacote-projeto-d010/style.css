@@ -268,3 +268,27 @@ footer > p > a:hover {
     text-decoration: underline;
     color: #3ddc84;
 }
+
+.botao {
+    background-color: gainsboro;
+    position: fixed;
+    margin: 20px;
+    border-radius: 50%;
+
+    background: gainsboro url(imagens/pngtree-up-arrow-image_1287479.png) center center / contain no-repeat scroll;
+
+    right: 0%;
+    bottom: 0%;
+
+    width: 100px;
+    height: 100px;
+
+    transition: 0.3s ease-in-out;
+}
+
+.botao:hover {
+    width: 115px;
+    height: 115px;
+    background-color: rgb(156, 155, 155);
+
+}
