@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exercício de Formulários</h1>
+
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sxman" value="M"> <label for="sxman" >Masculino</label>
+            <input type="radio" name="sexo" id="sxfem" value="F"> <label for="sxfem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Jogos Favoritos</legend>
+            <input type="checkbox" name="jodark" id="ijodark"> <label for="ijodark">Dark Souls</label> <br>
+            <input type="checkbox" name="jomine" id="ijomine"> <label for="ijomine">Minecraft</label> <br>
+            <input type="checkbox" name="joelden" id="ijoelden"> <label for="ijoelden">Elden Ring</label> <br>
+            <input type="checkbox" name="joproje" id="ijoproje"> <label for="ijoproje">Project Zomboid</label> <br>
+        </fieldset>
+
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+
+
+</body>
+</html>
