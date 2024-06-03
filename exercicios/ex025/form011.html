@@ -4,52 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulário</title>
-
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        p {
-            padding: 20px;
-            margin: 10px;
-        }
-
-        legend {
-            padding: 5px;
-            background-color: rgba(127, 255, 212, 0.233);
-            border-radius: 20px;
-        }
-
-        form {
-            margin: 20px auto 20px auto;
-            width: 650px;
-            height: 300px;
-        }
-
-        fieldset {
-            
-        }
-
-    </style>
-
+    
 </head>
 <body>
+
     <form action="cadastro.php" method="post">
 
         <fieldset>
             <legend>Cadastro Bsoft</legend>
             <p>
-                <label for="inome">Seu nome: </label>
-                <input type="text" name="nome" id="inome">
+                <label for="inome" >nome: </label>
+                <input type="text" name="nome" id="inome" autocomplete="additional-name" oninput="INome.innerHTML = String(inome.value)" >
+
+                <label for="isobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="isobrenome" required>
             </p>
+
             <p>
-                <label for="iemail">Escolha seu melhor e-mail: </label>
-                <input type="email" name="email" id="iemail">
+                <label for="icpf">CPF/CNPJ: </label>
+                <input type="text" name="cpf" id="icpf" required autocomplete="cc-number">
             </p>
+
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel">
+            </p>
+
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+
+            <p>
+                <label for="isenha">Senha: </label>
+                <input type="password" name="senha" id="isenha" required>
+            </p>
+
+            <output id="INome">Seu nome aqui!</output>
         </fieldset>
 
 

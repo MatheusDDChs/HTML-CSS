@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    padding: 20px;
+    margin: 10px;
+}
+
+legend {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: rgba(127, 255, 212, 0.233);
+    border-radius: 20px;
+}
+
+form {
+    margin: 20px auto 20px auto;
+    width: 650px;
+    height: 300px;
+}
+
+fieldset {
+    border-radius: 15px;
+}
+
+label {
+
+}
+
+input {
+    border-radius: 5px;
+    border: solid 2px rgba(0, 0, 0, 0.185);
+    padding: 2px;
+}
