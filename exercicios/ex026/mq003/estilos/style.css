@@ -1,13 +1,14 @@
 @charset "UTF-8";
-/* Configurações gerais */
 
+/* Declarações Gerais */
 * {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+html,
+body {
     width: 100vh;
     height: 100vh;
     background-color: #233eef;
@@ -21,4 +22,20 @@ h1 {
 
     color: white;
     text-shadow: 3px 3px #142175;
+}
+
+/* Declarações de Paisagens */
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-position: left bottom;
+    }
+}
+
+/* Declarações de Retrato */
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+    }
 }
