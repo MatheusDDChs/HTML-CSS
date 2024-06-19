@@ -19,6 +19,11 @@ Telas Grandes: acima de 1200px;
         background-image: url(../imagens/back-print.jpg); /* Desnecessário tendo em vista que não saem imagens de background na impressão */
     }
 
+    main h2::before {
+        content: 'Está é a versão de Impressão!';
+        text-decoration: underline;
+    }
+
     main h1 {
         text-shadow: none;
         color: black;
@@ -55,6 +60,12 @@ Telas Grandes: acima de 1200px;
         background-image: url(../imagens/back-tablet.jpg);
     }
 
+    main h2::before {
+        content: 'Esta é a versão de Tablet';
+        text-align: center;
+        text-decoration: underline;
+    }
+
     img#phone {
         display: none;
     }
@@ -77,6 +88,12 @@ Telas Grandes: acima de 1200px;
         background-image: url(../imagens/back-pc.jpg);
     }
 
+    main h2:before {
+        content: 'Esta é a versão de Deskotp';
+        font-weight: bold;
+        font-style: oblique;
+    }
+
     img#phone {
         display: none;
     }
@@ -97,6 +114,11 @@ Telas Grandes: acima de 1200px;
 @media screen and (min-width: 1200px) { /* Telas Grandes */
     body {
         background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main h2::before {
+        content: 'Esta é a versão para TV.';
+        text-decoration: underline;
     }
 
     img#phone {

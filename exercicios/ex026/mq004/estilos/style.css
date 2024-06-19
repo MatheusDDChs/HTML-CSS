@@ -28,6 +28,11 @@ main {
     padding: 10px;
 }
 
+h2::before {
+    content: 'Esta é a versão de Celular';
+    font-weight: bold;
+}
+
 h1 {
     text-align: center;
     color: aliceblue;
